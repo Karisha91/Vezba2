@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0ba5f6f-76d5-4892-a985-fbf8a8d0d8ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/runConfigurations/Djurdjevic_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Ispit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Predmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/glavna/Glavna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/ui/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Osoba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Predmet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Profesor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Student.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2wm4K3bA6mynPF7fzSwV3ao2ZyW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/kari/Documents/IdeaProjects/TMCProjects/mooc-java-programming-ii/Djurdjevic-2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kari\Documents\IdeaProjects\TMCProjects\mooc-java-programming-ii\Djurdjevic-2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hr.java.vjezbe.entitet" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0ba5f6f-76d5-4892-a985-fbf8a8d0d8ec" name="Changes" comment="" />
+      <created>1746633350081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746633350081</updated>
+    </task>
+    <servers />
+  </component>
+</project>
