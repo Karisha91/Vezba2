@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Djurdjevic-2" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="hr.java.vjezbe.entitet.Glavna" />
+    <module name="Djurdjevic-2" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
