@@ -18,6 +18,16 @@ public class VeleucilisteJave extends ObrazovnaUstanova implements Visokoskolska
     @Override
     public void izracunajKonacnuOcenuStudijaZaStudenta() {
 
+        int ocenaIspita = getListaIspita().get(0).getOcena();
+        int ocenaZavrsnog = 0;
+        int ocenaOdbrane = 0;
+        System.out.println(ocenaIspita);
+
+
+
+        // konacna ocena = (2 * prosek ocena studenta +
+        // ocena zavrsnog rada + ocena odbrane zavrsnog ) / 4
+
     }
 
     @Override
@@ -41,20 +51,30 @@ public class VeleucilisteJave extends ObrazovnaUstanova implements Visokoskolska
 
 
     @Override
-    public void filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita) {
-        for (Ispit ispit :
-                listaIspita) {
+    public ArrayList<Ispit> filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita) {
+        ArrayList<Ispit> polozeni = new ArrayList<>();
+        for (Ispit ispit : listaIspita) {
             if (ispit.getOcena() > 1) {
-                System.out.println(ispit);
+                polozeni.add(ispit);
             }
-
         }
+        return polozeni;
 
     }
 
     @Override
-    public void filtrirajIspitePoStudenta() {
-
+    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student) {
+        ArrayList<Ispit> novi = new ArrayList<>();
+        for (Ispit ispit:
+             listaIspita) {
+            if (ispit.getStudent().getIme().equals(student.getIme())) {
+                novi.add(ispit);
+            }
+        }
+        return novi;
+    }
+    public String toString () {
+        return getNazivUstanove();
     }
 
 }

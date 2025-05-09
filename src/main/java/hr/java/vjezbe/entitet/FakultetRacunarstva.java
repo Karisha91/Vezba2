@@ -28,12 +28,12 @@ public class FakultetRacunarstva extends ObrazovnaUstanova implements Diplomski{
     }
 
     @Override
-    public void filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita) {
-
+    public ArrayList<Ispit> filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita) {
+        return null;
     }
 
     @Override
-    public void filtrirajIspitePoStudenta() {
-
+    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student) {
+        return null;
     }
 }

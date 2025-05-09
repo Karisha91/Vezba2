@@ -3,24 +3,35 @@ import hr.java.vjezbe.entitet.Ispit;
 import hr.java.vjezbe.entitet.Predmet;
 import hr.java.vjezbe.entitet.Profesor;
 import hr.java.vjezbe.entitet.Student;
+
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class UI {
 
+    private int OcenaZavrsnog;
+
+    private int OcenaOdbrane;
+
     private Scanner scanner;
-    private List<Profesor> listaProfesora;
+    private ArrayList<Profesor> listaProfesora;
 
-    private List<Predmet> listaPredmeta;
+    private ArrayList<Predmet> listaPredmeta;
 
-    private List <Student> listaStudenata;
+    private ArrayList<Student> listaStudenata;
 
-    private List<Ispit> listaIspita;
+    private ArrayList<Ispit> listaIspita;
+
+    private ArrayList<ObrazovnaUstanova> listaObrazovnihUstanova;
+
+    private ArrayList<Integer> listaOcena;
 
     public UI() {
         this.scanner = new Scanner(System.in);
@@ -28,6 +39,9 @@ public class UI {
         this.listaPredmeta = new ArrayList<>();
         this.listaStudenata = new ArrayList<>();
         this.listaIspita = new ArrayList<>();
+        this.listaObrazovnihUstanova = new ArrayList<>();
+        this.listaOcena = new ArrayList<>();
+
 
     }
     public void startUI(){
@@ -58,6 +72,7 @@ public class UI {
             if (answer.equals("5")) {
                 unosUstanove();
             }
+
             if (answer.equals("6")) {
                 break;
             }
@@ -65,6 +80,7 @@ public class UI {
         }
     }
     private void unosProfesora() {
+
         System.out.print("Unesite sifru profesora: ");
         String sifra = scanner.nextLine();
 
@@ -82,6 +98,7 @@ public class UI {
 
     }
     private void unosPredmet(){
+
         System.out.print("Unesite sifru predmeta: ");
         String sifra = scanner.nextLine();
 
@@ -104,12 +121,14 @@ public class UI {
 
         System.out.print("Unesite broj studenata za predmet: " + naziv + ":");
         int brojStudenata = scanner.nextInt();
+        scanner.nextLine();
 
         Predmet predmet = new Predmet(sifra, naziv, ocena, profesor);
         listaPredmeta.add(predmet);
     }
 
     private void unosStudenta(){
+
         System.out.print("Unesite ime studenta: ");
         String ime = scanner.nextLine();
 
@@ -152,6 +171,7 @@ public class UI {
 
         System.out.println("Unesite ocenu na ispitu (1-5):");
         int ocena = scanner.nextInt();
+        scanner.nextLine();
 
         LocalDateTime datumIVreme;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy.'T'HH:mm");
@@ -166,11 +186,80 @@ public class UI {
             }
         }
         Ispit ispit = new Ispit(predmet, student, ocena, datumIVreme);
+        this.listaIspita.add(ispit);
         System.out.println("ispit dodat");
         System.out.println("Student " + student.getIme() + " " + student.getPrezime() + " je ostvario ocenu " + ocena(ocena) + " na predmetu " + predmet.getNaziv() + ".");
     }
 
-    private void unosUstanove() {
+    public void unosUstanove() {
+        System.out.println("Unesite broj obrazovnih ustanova: ");
+        int broj = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("Unesite podatke za obrazovnu ustanovu:");
+
+        for (int i = 0; i < broj; i++) {
+            System.out.println("Unesite "+ (i + 1) +". profesora:");
+            unosProfesora();
+        }
+        for (int i = 0; i < broj; i++) {
+            System.out.println("Unesite "+ (i + 1) +". studenta:");
+            unosStudenta();
+        }
+        for (int i = 0; i < broj; i++) {
+            System.out.println("Unesite "+ (i + 1) +". predmet:");
+            unosPredmet();
+        }
+
+        for (int i = 0; i < broj; i++) {
+            System.out.println("Unesite "+ (i + 1) +". ispit:");
+            unosIspita();
+        }
+
+
+        ArrayList<Profesor> prof = this.listaProfesora;
+        ArrayList<Student> stud = this.listaStudenata;
+        ArrayList<Predmet> pred = this.listaPredmeta;
+        ArrayList<Ispit> ispit = this.listaIspita;
+
+        System.out.println("Odaberite obrazovnu ustanovu za koju zelite da unesete podatke: '\n'" +
+                "1. Veleuciliste java '\n'" +
+                "2. Fakultet racunarstva");
+
+        int odabir = scanner.nextInt();
+        scanner.nextLine();
+        if (odabir == 1) {
+            System.out.println("Unesite naziv Obrazovne Ustanove:");
+            String naziv = scanner.nextLine();
+            ObrazovnaUstanova ou = new VeleucilisteJave(naziv, prof, stud, pred, ispit);
+            listaObrazovnihUstanova.add(ou);
+            System.out.println("Unesite ocenu zavrsnog rada za studenta: " + listaStudenata.get(0));
+            int ocenaZavrsnog = scanner.nextInt();
+            scanner.nextLine();
+            System.out.println("Unesite ocenu odbrane zavrsnog rada za studenta: " + listaStudenata.get(0));
+            int ocenaOdbrane = scanner.nextInt();
+            scanner.nextLine();
+            listaOcena.add(ocenaZavrsnog);
+            listaOcena.add(ocenaOdbrane);
+
+
+
+
+        }
+
+        if (odabir == 2) {
+
+            System.out.println("Unesite naziv Obrazovne Ustanove:");
+            String naziv = scanner.nextLine();
+            ObrazovnaUstanova ou = new FakultetRacunarstva(naziv, prof, stud, pred, ispit);
+            listaObrazovnihUstanova.add(ou);
+        }
+
+        for (int i = 0; i < listaObrazovnihUstanova.size(); i++) {
+            System.out.println((i + 1) + ". " + listaObrazovnihUstanova.get(i));
+        }
+
+
 
     }
     private String ocena(int ocena){

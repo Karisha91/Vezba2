@@ -46,4 +46,7 @@ public abstract class ObrazovnaUstanova {
     public ArrayList<Predmet> getListaPredmeta() {
         return listaPredmeta;
     }
+    public ArrayList<Ispit> getListaIspita() {
+        return listaIspita;
+    }
 }

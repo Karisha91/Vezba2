@@ -5,38 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ba5f6f-76d5-4892-a985-fbf8a8d0d8ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Djurdjevic_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/runConfigurations/Djurdjevic_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Ispit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Predmet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Profesor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/glavna/Glavna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Djurdjevic-2/src/main/java/hr/java/vjezbe/ui/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Diplomski.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/FakultetRacunarstva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Glavna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Ispit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Osoba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Predmet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Profesor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/VeleucilisteJave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Visokoskolska.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/FakultetRacunarstva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/FakultetRacunarstva.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Glavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Glavna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/VeleucilisteJave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/VeleucilisteJave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Visokoskolska.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Visokoskolska.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/kari/Documents/IdeaProjects/TMCProjects/mooc-java-programming-ii/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kari/Documents/IdeaProjects/TMCProjects/mooc-java-programming-ii/Djurdjevic-2/src/main/java/hr/java/vjezbe/entitet&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kari\Documents\IdeaProjects\TMCProjects\mooc-java-programming-ii\Djurdjevic-2\src\main\java\hr\java\vjezbe\entitet" />
@@ -89,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1746633350081</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1746728514102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746728514102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

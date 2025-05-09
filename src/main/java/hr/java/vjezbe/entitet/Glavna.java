@@ -9,7 +9,7 @@ public class Glavna {
     public static void main(String[] args) {
 
         //UI ui = new UI();
-        //.startUI();
+        //ui.startUI();
         Profesor profesor1 = new Profesor("001", "Ivan", "Djurdjevic", "Legenda");
         Profesor profesor2 = new Profesor("002", "Marko", "Markovic", "Kralj");
 
@@ -20,6 +20,7 @@ public class Glavna {
         Predmet predmet2 = new Predmet("002", "JavaScript", 6, profesor2);
 
         Ispit ispit1 = new Ispit(predmet1, student1, 5, LocalDateTime.of(1991, 5, 12, 15, 33));
+        Ispit ispit3 = new Ispit(predmet1, student1, 6, LocalDateTime.of(1991, 5, 12, 15, 33));
         Ispit ispit2 = new Ispit(predmet1, student2, 1, LocalDateTime.of(1991, 5, 12, 15, 33));
 
 
@@ -35,11 +36,14 @@ public class Glavna {
         ArrayList<Ispit> listaIspita = new ArrayList<>();
         listaIspita.add(ispit1);
         listaIspita.add(ispit2);
+        listaIspita.add(ispit3);
 
         VeleucilisteJave vj = new VeleucilisteJave("VeleJava", listaProfesora, listaStudenata, listaPredmeta, listaIspita);
+        ArrayList<Ispit> polozeni = vj.filtrirajPolozeneIspite(listaIspita);
+        ArrayList<Ispit> poStudentu = vj.filtrirajIspitePoStudenta(listaIspita, student1);
+        vj.izracunajKonacnuOcenuStudijaZaStudenta();
+        System.out.println(poStudentu);
 
-
-        vj.odrediProsekOceneNaIspitima(listaIspita);
 
 
 

@@ -8,9 +8,9 @@ public interface Visokoskolska {
 
     public void odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita);
 
-    public void filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita);
+    public ArrayList<Ispit> filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita);
 
-    public void filtrirajIspitePoStudenta();
+    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student);
 
 
 
