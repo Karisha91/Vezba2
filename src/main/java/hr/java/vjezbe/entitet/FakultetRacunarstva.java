@@ -13,18 +13,24 @@ public class FakultetRacunarstva extends ObrazovnaUstanova implements Diplomski{
     }
 
     @Override
-    public Student odrediStudentaZaRektorovuNagradu() {
+    public Student odrediNajuspesnijegStudentaNaGodini(int godina) {
         return null;
     }
 
     @Override
-    public void izracunajKonacnuOcenuStudijaZaStudenta() {
+    public Student odrediStudentaZaRektorovuNagradu() {
+        return null;
+    }
 
+
+    @Override
+    public BigDecimal izracunajKonacnuOcenuStudijaZaStudenta(ArrayList<Ispit> listaIspita, int zavrsnaOcena, int ocenaOdbrane) {
+        return null;
     }
 
     @Override
-    public void odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita) {
-
+    public BigDecimal odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita) {
+        return null;
     }
 
     @Override
@@ -33,7 +39,7 @@ public class FakultetRacunarstva extends ObrazovnaUstanova implements Diplomski{
     }
 
     @Override
-    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student) {
+    public ArrayList<Ispit> filtrirajIspitePoStudentu(ArrayList<Ispit> listaIspita, Student student) {
         return null;
     }
 }

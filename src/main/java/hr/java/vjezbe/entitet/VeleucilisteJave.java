@@ -1,5 +1,7 @@
 package hr.java.vjezbe.entitet;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 
 
@@ -16,34 +18,37 @@ public class VeleucilisteJave extends ObrazovnaUstanova implements Visokoskolska
     }
 
     @Override
-    public void izracunajKonacnuOcenuStudijaZaStudenta() {
-
-        int ocenaIspita = getListaIspita().get(0).getOcena();
-        int ocenaZavrsnog = 0;
-        int ocenaOdbrane = 0;
-        System.out.println(ocenaIspita);
-
-
-
-        // konacna ocena = (2 * prosek ocena studenta +
-        // ocena zavrsnog rada + ocena odbrane zavrsnog ) / 4
-
+    public Student odrediNajuspesnijegStudentaNaGodini(int godina) {
+        return null;
     }
 
     @Override
-    public void odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita) {
+    public BigDecimal izracunajKonacnuOcenuStudijaZaStudenta(ArrayList<Ispit> listaIspita, int zavrsnaOcena, int ocenaOdbrane) {
+
+        BigDecimal ocenaIspita = odrediProsekOceneNaIspitima(listaIspita);
+
+        BigDecimal result = ocenaIspita.multiply(new BigDecimal(2))
+                .add(new BigDecimal(zavrsnaOcena))
+                .add(new BigDecimal(ocenaOdbrane))
+                .divide(new BigDecimal(4), 2, RoundingMode.HALF_UP);
+
+        return result;
+    }
+
+    @Override
+    public BigDecimal odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita) {
         int sum = 0;
-        double prosek = 0;
+        int count = 0;
         for (Ispit ispit :
                 listaIspita) {
             if(ispit.getOcena() > 1) {
                 sum = sum + ispit.getOcena();
-                prosek = (double) sum / listaIspita.size();
+                count++;
             }
 
-
         }
-        System.out.println(prosek);
+        double prosek = (double) sum / count;
+        return BigDecimal.valueOf(prosek);
 
 
     }
@@ -63,7 +68,7 @@ public class VeleucilisteJave extends ObrazovnaUstanova implements Visokoskolska
     }
 
     @Override
-    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student) {
+    public ArrayList<Ispit> filtrirajIspitePoStudentu(ArrayList<Ispit> listaIspita, Student student) {
         ArrayList<Ispit> novi = new ArrayList<>();
         for (Ispit ispit:
              listaIspita) {

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0ba5f6f-76d5-4892-a985-fbf8a8d0d8ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/FakultetRacunarstva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/FakultetRacunarstva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Glavna.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Glavna.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/ObrazovnaUstanova.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/VeleucilisteJave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/VeleucilisteJave.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Visokoskolska.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hr/java/vjezbe/entitet/Visokoskolska.java" afterDir="false" />

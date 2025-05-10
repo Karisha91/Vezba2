@@ -231,16 +231,20 @@ public class UI {
         if (odabir == 1) {
             System.out.println("Unesite naziv Obrazovne Ustanove:");
             String naziv = scanner.nextLine();
-            ObrazovnaUstanova ou = new VeleucilisteJave(naziv, prof, stud, pred, ispit);
+            VeleucilisteJave ou = new VeleucilisteJave(naziv, prof, stud, pred, ispit);
             listaObrazovnihUstanova.add(ou);
-            System.out.println("Unesite ocenu zavrsnog rada za studenta: " + listaStudenata.get(0));
-            int ocenaZavrsnog = scanner.nextInt();
-            scanner.nextLine();
-            System.out.println("Unesite ocenu odbrane zavrsnog rada za studenta: " + listaStudenata.get(0));
-            int ocenaOdbrane = scanner.nextInt();
-            scanner.nextLine();
-            listaOcena.add(ocenaZavrsnog);
-            listaOcena.add(ocenaOdbrane);
+            for (int i = 0; i < broj; i++) {
+                System.out.println("Unesite ocenu zavrsnog rada za studenta: " + listaStudenata.get(i));
+                int ocenaZavrsnog = scanner.nextInt();
+                scanner.nextLine();
+                System.out.println("Unesite ocenu odbrane zavrsnog rada za studenta: " + listaStudenata.get(i));
+                int ocenaOdbrane = scanner.nextInt();
+                scanner.nextLine();
+                System.out.println("Konacna ocena studija za studenta " + listaStudenata.get(i) + " je " +
+                        ou.izracunajKonacnuOcenuStudijaZaStudenta(listaIspita, ocenaZavrsnog, ocenaOdbrane));
+            }
+
+
 
 
 
@@ -281,4 +285,8 @@ public class UI {
             return "odlican";
         }
     }
+    public ArrayList<Integer> getListaOcena() {
+        return listaOcena;
+    }
 }
+

@@ -26,10 +26,7 @@ public abstract class ObrazovnaUstanova {
         this.listaIspita = listaIspita;
 
     }
-    public Student odrediNajuspesnijegStudentaNaGodini(int godina){
-
-        return null;
-    }
+    public abstract Student odrediNajuspesnijegStudentaNaGodini(int godina);
 
     public String getNazivUstanove() {
         return nazivUstanove;

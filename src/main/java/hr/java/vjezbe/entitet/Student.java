@@ -30,6 +30,6 @@ public class Student extends Osoba{
     }
 
     public String toString() {
-        return getIme() + " " + getPrezime() + " " + getDatumRodjenja();
+        return getIme() + " " + getPrezime();
     }
 }

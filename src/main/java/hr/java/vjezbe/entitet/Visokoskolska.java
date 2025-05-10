@@ -1,16 +1,17 @@
 package hr.java.vjezbe.entitet;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public interface Visokoskolska {
 
-    public void izracunajKonacnuOcenuStudijaZaStudenta();
+    public BigDecimal izracunajKonacnuOcenuStudijaZaStudenta(ArrayList<Ispit> listaIspita, int zavrsnaOcena, int ocenaOdbrane);
 
-    public void odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita);
+    public BigDecimal odrediProsekOceneNaIspitima(ArrayList<Ispit> listaIspita);
 
     public ArrayList<Ispit> filtrirajPolozeneIspite(ArrayList<Ispit> listaIspita);
 
-    public ArrayList<Ispit> filtrirajIspitePoStudenta(ArrayList<Ispit> listaIspita, Student student);
+    public ArrayList<Ispit> filtrirajIspitePoStudentu(ArrayList<Ispit> listaIspita, Student student);
 
 
 
